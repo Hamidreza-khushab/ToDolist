@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Selected Value</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <style>
+        #container{
+            max-width: 300px;
+            border: 1px solid red;
+            margin: auto;
+            background-color: darkgray;
+            padding: 15px;
+            margin-top: 3%;
+            border-radius: 20px;
+        }
+        form{
+            padding: 5px;
+            line-height: 25px;
+        }
+        input{
+            line-height: 30px;
+            border-radius: 15px;
+            padding: 10px;
+
+        }
+        #btnAdd{
+            margin-left: 40%;
+            width: 100px;
+            padding: 3px;
+            margin-top: 3%;
+        }
+        #list{
+            width: 250px!important;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>   
+        <div id="container">
+            <form>
+                <label for="name">Framework:</label>
+                <input type="text" id="name" placeholder="Enter a work" autocomplete="off">
+    
+                <button id="btnAdd">Add</button> <br><hr>
+    
+                <label for="list">TODO List:</label><br>
+                <select id="list" name="list" multiple>
+    
+                </select>
+                <button id="btnRemove">Remove Selected </button>
+            </form>
+        </div>   
+        <script src="index.js"></script>
+</body>
+</html>
